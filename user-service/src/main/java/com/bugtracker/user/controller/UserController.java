@@ -5,12 +5,9 @@ import com.bugtracker.user.dto.UpdateUserDto;
 import com.bugtracker.user.dto.UserDto;
 import com.bugtracker.user.entity.AuthRequest;
 import com.bugtracker.user.entity.User;
-
-
 import com.bugtracker.user.service.UserService;
 import com.bugtracker.user.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.web.bind.annotation.*;

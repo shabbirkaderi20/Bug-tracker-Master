@@ -29,5 +29,11 @@ public class FallBackMethodController {
         return "Bug Service is taking longer than Expected. " +
                 " Please try again later.";
     }
+
+    @GetMapping("/commentsServiceFallBack")
+    public String commentsServiceFallBackMethod() {
+        return "Comment Service is taking longer than Expected. " +
+                " Please try again later.";
+    }
 }
 

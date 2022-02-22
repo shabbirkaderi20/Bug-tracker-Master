@@ -46,6 +46,15 @@ spring:
           args:
             name: BUG-SERVICE
             fallbackuri: forward:/bugServiceFallBack
+      - id: COMMENT-SERVICE
+        uri: http://localhost:9005/
+        predicates:
+        - Path=/comments/**
+        filters:
+        - name: CircuitBreaker
+          args:
+            name: COMMENT-SERVICE
+            fallbackuri: forward:/commentsServiceFallBack
 
 
 hystrix:
